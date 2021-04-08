@@ -47,7 +47,7 @@ public class GitHubServiceImplTest {
         List<GithubModel> ownerRepos = gitHubService.getSortedReposByStars(repoOwner, sortOrderDesc);
 
         assertNotNull(ownerRepos);
-        assertEquals(ownerRepos.size(), 15);
+        assertEquals(ownerRepos.size(), 16);
         assertEquals(ownerRepos.get(0).getRepositoryNumberOfStargazer().intValue(), 1);
     }
 
@@ -59,7 +59,7 @@ public class GitHubServiceImplTest {
         List<GithubModel> ownerRepos = gitHubService.getSortedReposByStars(repoOwner, sortOrderAsc);
 
         assertNotNull(ownerRepos);
-        assertEquals(ownerRepos.size(), 15);
+        assertEquals(ownerRepos.size(), 16);
         assertEquals(ownerRepos.get(0).getRepositoryNumberOfStargazer().intValue(), 0);
     }
 
